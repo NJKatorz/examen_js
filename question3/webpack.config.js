@@ -1,3 +1,4 @@
+/* eslint-disable eol-last */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -14,7 +15,7 @@ module.exports = {
   devServer: {
     // contentBase: path.join(__dirname, 'dist'),
     static: {
-      directory: path.join(__dirname, 'dist')
+      directory: path.join(__dirname, 'dist'),
     },
     client: {
       overlay: {
