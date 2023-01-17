@@ -3,6 +3,7 @@
 /* eslint-disable eol-last */
 const path = require('node:path');
 const escape = require('escape-html');
+const { v4: uuidv4 } = require('uuid');
 
 const { parse, serialize } = require('../utils/json');
 
@@ -21,7 +22,8 @@ function createOnePlace(name, description) {
     const places = parse(jsonDbPath);
 
     const createdPlace = {
-        id: getNextId(),
+        // id: getNextId(),
+        id: uuidv4(),
         name: escape(name),
         description: escape(description),
     };
@@ -32,7 +34,7 @@ function createOnePlace(name, description) {
 
     return createdPlace;
 }
-
+/*
 function getNextId() {
     const places = parse(jsonDbPath);
     const lastItemIndex = places?.length !== 0 ? places.length - 1 : undefined;
@@ -41,6 +43,7 @@ function getNextId() {
     const nextId = lastId + 1;
     return nextId;
 }
+*/
 
 module.exports = {
     createOnePlace,

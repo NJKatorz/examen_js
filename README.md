@@ -3,3 +3,6 @@
 - Pour chaque question, utilisez le boilerplate offert. 
 Vous allez devoir installer les packages pour faire fonctionner vos applications.
 N'hésitez pas à modifier ou ajouter tous les fichiers JS nécessaires.
+
+# uuid
+npm i uuid;

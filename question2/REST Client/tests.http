@@ -9,6 +9,15 @@ Content-Type: application/json
     "description":"Nice place."
 }
 
+### Create another place
+POST {{baseUrl}}/places/create
+Content-Type: application/json
+
+{
+    "name":"Brixton",
+    "description":"Brixton's bullies."
+}
+
 ### Create a user
 POST {{baseUrl}}/users/register
 Content-Type: application/json
